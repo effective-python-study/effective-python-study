@@ -1,6 +1,6 @@
 # Effective Python Study
 
-이 저장소는 **Effective Python** 책을 공부하면서 정리한 내용을 기록합니다. 책에서 다루는 다양한 Python의 베스트 프랙티스와 실용적인 팁을 정리하고, 직접 실습한 코드와 함께 공유합니다.
+이 저장소는 **Effective Python** 책을 공부하면서 정리한 내용을 기록합니다. 책에서 다루는 다양한 Python의 Best Practice와 실용적인 팁을 정리하고, 직접 실습한 코드와 함께 공유합니다.
 
 ## 👥 멤버
 - [@chlendyd7](https://github.com/chlendyd7)
@@ -10,7 +10,7 @@
 ## 📚 목표
 
 - Python의 효율적인 사용법 익히기
-- 베스트 프랙티스 학습 및 적용
+- Best Practice 학습 및 적용
 - 실전에서 활용할 수 있는 코드 작성 능력 향상
 
 ## 📖 학습 방식
@@ -41,13 +41,14 @@
 │   │   └── ...
 ```
 
-💾 `py` 파일이나 `md` 파일 등 원하는 방식으로 저장할 수 있습니다.
+### 💾 `py` 파일이나 `md` 파일 등 원하는 방식으로 저장할 수 있습니다.
 
 ## 🔗 참고 자료
 
 - [Effective Python 공식 페이지](https://effectivepython.com/)
 - [Python 공식 문서](https://docs.python.org/3/)
 - [길 벗 예제 사이트](https://github.com/gilbutITbook/080235/tree/master)
-  
-함께 공부하며 성장해봅시다! 🚀
+
+
+## 함께 공부하며 성장해봅시다! 🚀
 

@@ -39,7 +39,7 @@ class MyChildObject(MyParentObject):
         return self.__private_field
 
 baz = MyChildObject()
-# baz.get_private_field()
+baz.get_private_field()
 
 # 자동으로 python에서 바꿔준다
 baz._MyParentObject__private_field  == 71

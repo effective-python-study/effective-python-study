@@ -67,8 +67,8 @@ total 값은 첫 번째 호출에서 계산된 것인데, 두 번째 호출에�
 
 path = 'my_numbers.txt'
 percentages = normalize_func(lambda: read_visits(path))
-
 class ReadVisits:
+    # 인스턴스 변수
     def __init__(self, data_path):
         self.data_path = data_path
 

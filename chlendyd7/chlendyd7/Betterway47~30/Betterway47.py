@@ -26,6 +26,7 @@ data = LoggingLazyRecord()
 print('exists:', data.exists)
 print('첫 번째 foo:', data.foo)
 print('두 번째 foo', data.foo)
+
 '''
 exists 애트리뷰트가 인스턴스 딕셔너리에 있으므로 __getattr__이 결코 호출되지 않는다. 
 반면 foo 애트리뷰트는 처음에 인스턴스 딕셔너리에 없으므로 맨 처음 foo에 접근하면 __getattr__이 호출된다. 

@@ -1,6 +1,15 @@
 '''
 __init_subclass__ 정의 안에서 super().__init_subclass__를 호출해 여러 계층에 걸쳐 클래스를 검증하고 다중 상속을 제대로 처리하도록 하라
 '''
+
+'''
+    __new__는 객체를 생성할 때 호출되는 메서드.
+    인스턴스 생성 전에 클래스가 새로운 객체를 만들기 위해 메모리를 할당하는 단계에서 호출돼.
+
+    __init_subclass__는 Python 3.6부터 도입된 특별 메서드로, 클래스를 상속받을 때 자동으로 호출되는 훅(hook) 메서드입니다. 
+    주로 메타프로그래밍 또는 프레임워크를 설계할 때 하위 클래스의 동작을 커스터마이징할 때 사용됩니다.
+'''
+
 class Meta(type):
     def __new__(meta, name, bases, class_dict):
         print(f'* 실행: {name}의 메타 {meta}.__new__')
@@ -11,6 +20,8 @@ class Meta(type):
 
 class MyClass(metaclass=Meta):
     stuff = 123
+    
+        
 
     def foo(self):
         pass

@@ -67,3 +67,16 @@ threads = [
 
 for thread in threads:
     thread.start()
+
+for _ in range(1000):
+    download_queue.put(object())
+
+while len(done_queue.items) < 1000:
+    # 기다리는 동안 유용한 작업을 수행한다
+    pass
+
+processed = len(done_queue.items)
+polled = sum(t.polled_count for t in threads)
+print(f"{processed} 개의 아이템을 처리했습니다, " f"이때 폴링을 {polled} 번 했습니다.")
+
+# 작업이 끝나도 무한대기함. 프로그램을 강제종료시킬것
